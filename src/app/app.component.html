@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="app.component.css">
+<nav id="navbar" class="nav">
+    <ul class="nav-list">
+        <li><a routerLink="/">Início</a></li>
+        <li><a routerLink="/list">Contatos</a></li>
+        <li><a routerLink="/two-way-biding">Adicionar Contato</a></li>
+        <li><a routerLink="/updateContatos">Atualizar Contatos</a></li>
+    </ul>
+
+
+</nav>
+<section id="welcome-section" class="welcome-section">
+    <form id="survey-form">
+        <h1>Agenda</h1>
+        <nav>
+            <ul id="form-ul">
+                <li><a routerLink="/list">Lista de Contatos</a></li>
+                <li><a routerLink="/two-way-biding">Criar Usuario</a></li>
+            </ul>
+        </nav>
+        <div>
+            <router-outlet></router-outlet>
+        </div>
+    </form>
+</section>
+<footer>
+    <p>
+        &copy; Created by
+        <a>
+            <a href="https://www.instagram.com/juan_henrique04/" target="_blank">JuanHenrique04</a>
+        </a>
+    </p>
+</footer>
